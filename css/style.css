@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+h1 {
+    font-family: 'Prompt', sans-serif;
+}
+h2 {
+    font-family: 'Prompt', sans-serif;
+}
+h3 {
+    font-family: 'Prompt', sans-serif;
+}
+p {
+    font-family: 'Prompt', sans-serif;
+}
+body {
+    background-color: #222222;
+    min-width: 400px;
+}
+/*-----------------HEADER---------------------*/
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 4rem;
+    background-color: #151515;
+}
+
+    
+
+    /*-----------------LOGO---------------------*/
+    .logo {
+        display: flex;
+        padding-block: 1rem;
+        padding-inline: 2rem;
+        text-decoration: none;
+    }
+
+    .logo img{
+        height: 100px;
+        margin-right: 10px;
+    }
+
+    .logo h2 {
+        color: white;
+        margin-top: 2.3rem;
+    }
+    /*-----------------LOGO---------------------*/
+    /*-----------------NAV---------------------*/
+    .header nav li{
+        display: flex;
+        gap: 2rem 2rem;
+        flex-wrap: wrap;
+    }
+    .header nav a{
+        border-inline: 1px solid #d5b75d;
+        color: white;
+        text-decoration: none;
+    }
+    /*-----------------NAV---------------------*/
+/*-----------------HEADER---------------------*/
+/*-----------------MAIN---------------------*/
+main {
+    background-color: #222222;
+}
+
+    /*-----------------titulo---------------------*/
+    .titulo {
+        color: white;
+        text-align: center;
+        background-color: #00ac81;
+        padding-block: 15px;
+    }
+    .titulo h1 {
+        font-size: 100px;
+    }
+    .titulo h2 {
+        font-size: 40px;
+    }
+    /*-----------------textoguitarra---------------------*/
+    .textos {
+        display: flex;
+        justify-content: center;
+        
+    }
+    .textos div {
+        display: flex;
+        align-items: center;
+        color: #d5b75d;
+        padding-block: 4rem;
+        
+    }
+
+    .textos img {
+        height: 350px;
+        padding-right: 40px;
+    }
+
+    .textos  h1{
+        width: 600px;
+    }
+
+
+
+
+    /*-----------------venta---------------------*/
+    .ventas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-block: 60px;
+        padding-top: 50px;
+        text-align: center;
+    }
+    /*-----------------venta1---------------------*/
+    .venta {
+        padding: 2rem;
+    }
+    .venta h2 {
+        color: #d5b75d;
+    }
+    .venta img {
+        width: 400px;
+        height: 400px;
+    }
+    /*-----------------equipos---------------------*/
+    .equipos {
+        color: #d5b75d;
+    }
+    .equipos1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-block: 60px;
+        padding-top: 150px;
+    }
+    .equipos1 h2 {
+        font-size: 50px;
+    }
+    .equipos1 h3{
+        width: 600px;
+    }
+    .equipos2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-block: 60px;
+    }
+    .equipos2 img {
+        padding-right: 80px;
+    }
+    .equipos2 h2 {
+        font-size: 50px;
+    }
+    .equipos2 h3{
+        width: 600px;
+    }
+    .equipos3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-block: 60px;
+        padding-bottom: 150px;
+    }
+    .equipos3 h2 {
+        font-size: 50px;
+    }
+    .equipos3 h3{
+        width: 600px;
+    }
+    /*-----------------nosotros---------------------*/
+    .nosotros {
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+    .empleados {
+        padding-block: 28.5px;
+    }
+    .empleados img {
+        width: 800px;
+    }
+    .empleados h3 {
+        padding-bottom: 5px;
+        color: #d5b75d;
+    }
+    .subtexto {
+        padding-bottom: 20px;
+        width: 800px;
+        color: white;
+    }
+    .subtexto h3 {
+        padding-bottom: 5px;
+        color: #d5b75d;
+    }
+    /*-----------------contactanos---------------------*/
+    .contactotitulo {
+        display: flex;
+        justify-content: center;
+        padding-block: 50px;
+        font-size: 40px;
+        color: #d5b75d;
+    }
+    .contacto {
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 76px;
+        color: #d5b75d;
+    }
+    .contacto li {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 33.4px;
+    }
+    .contacto h3 {
+        font-size: 40px;
+    }
+    .contacto input {
+        margin-inline: 9px;
+    }
+    .contacto textarea {
+        margin-inline: 9px;
+    }
+
+/*-----------------FOOTER---------------------*/
+
+    .redes {
+        background-color: #151515;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .copyright p {
+        color: white;
+        width: 400px;
+        font-size: 13px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    
+    .redes a {
+        display: flex;
+        padding-top: 25px;
+    }
+    .redes a img{
+        height: 25px;
+        padding-right: 15px;
+    }
+
+    .redes a h3 {
+        color: #d5b75d;
+    }
+
+body {
+    background-color: #222222;
+}
+
+
+/*---------AJUSTES----------*/
+@media (max-width: 960px) {
+
+    .header-contenido{
+        justify-content: center;
+    }
+
+    .titulo h1 {
+        font-size: 50px;
+    }
+    .titulo h2 {
+        font-size: 30px;
+    }
+
+    .textos {
+        display:inline;
+    }
+    .venta img {
+        width: 300px;
+        height: 300px;
+    }
+}
+@media (max-width: 576px) {
+    
+    .titulo h1 {
+        font-size: 35px;
+    }
+    .titulo h2 {
+        font-size: 17px;
+    }
+    .venta img {
+        width: 200px;
+        height: 200px;
+    }
+}
