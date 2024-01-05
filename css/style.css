@@ -4,10 +4,15 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
 
 li {
     list-style: none;
+}
+ul {
+    padding: 0px;
 }
 
 a {
@@ -17,7 +22,7 @@ h1 {
     font-family: 'Prompt', sans-serif;
 }
 h2 {
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Space Mono', monospace;;
 }
 h3 {
     font-family: 'Prompt', sans-serif;
@@ -25,17 +30,21 @@ h3 {
 p {
     font-family: 'Prompt', sans-serif;
 }
+
 body {
     background-color: #222222;
-    min-width: 400px;
 }
 /*-----------------HEADER---------------------*/
-.header {
+
+.conf {
+    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 0rem 4rem;
+}
+
+.header{
     background-color: #151515;
 }
 
@@ -57,12 +66,13 @@ body {
     .logo h2 {
         color: white;
         margin-top: 2.3rem;
+        font-family: 'Space Mono', monospace;
     }
     /*-----------------LOGO---------------------*/
     /*-----------------NAV---------------------*/
     .header nav li{
         display: flex;
-        gap: 2rem 2rem;
+        gap: 2rem;
         flex-wrap: wrap;
     }
     .header nav a{
@@ -91,22 +101,23 @@ main {
         font-size: 40px;
     }
     /*-----------------textoguitarra---------------------*/
-    .textos {
+    .textos div {
         display: flex;
         justify-content: center;
-        
     }
+    
+
     .textos div {
         display: flex;
         align-items: center;
         color: #d5b75d;
         padding-block: 4rem;
-        
+        flex-wrap: wrap;
     }
 
     .textos img {
         height: 350px;
-        padding-right: 40px;
+        margin-inline: 40px;
     }
 
     .textos  h1{
@@ -128,58 +139,36 @@ main {
     /*-----------------venta1---------------------*/
     .venta {
         padding: 2rem;
+        align-items: center;
+    }
+    .venta div {
+        max-width: 500px;
     }
     .venta h2 {
         color: #d5b75d;
     }
     .venta img {
+        margin-inline: 20px;
         width: 400px;
         height: 400px;
     }
     /*-----------------equipos---------------------*/
-    .equipos {
+    .equipo {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 2rem;
+        align-items: center;
+        margin-block: 40px;
         color: #d5b75d;
     }
-    .equipos1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-block: 60px;
-        padding-top: 150px;
+    .equipo div {
+        max-width: 500px;
     }
-    .equipos1 h2 {
-        font-size: 50px;
-    }
-    .equipos1 h3{
-        width: 600px;
-    }
-    .equipos2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-block: 60px;
-    }
-    .equipos2 img {
-        padding-right: 80px;
-    }
-    .equipos2 h2 {
-        font-size: 50px;
-    }
-    .equipos2 h3{
-        width: 600px;
-    }
-    .equipos3 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-block: 60px;
-        padding-bottom: 150px;
-    }
-    .equipos3 h2 {
-        font-size: 50px;
-    }
-    .equipos3 h3{
-        width: 600px;
+    .equipo img {
+        margin-inline: 20px;
+        width: 400px;
+        height: 400px;
     }
     /*-----------------nosotros---------------------*/
     .nosotros {
@@ -210,6 +199,7 @@ main {
     .contactotitulo {
         display: flex;
         justify-content: center;
+        padding-inline: 40px;
         padding-block: 50px;
         font-size: 40px;
         color: #d5b75d;
@@ -242,12 +232,14 @@ main {
         background-color: #151515;
         display: flex;
         justify-content: space-around;
+        padding-inline: 20px;
         flex-wrap: wrap;
     }
+
     
     .copyright p {
         color: white;
-        width: 400px;
+        max-width: 700px;
         font-size: 13px;
         padding-top: 20px;
         padding-bottom: 10px;
@@ -273,9 +265,9 @@ body {
 
 
 /*---------AJUSTES----------*/
-@media (max-width: 960px) {
+@media (max-width: 990px) {
 
-    .header-contenido{
+    .conf {
         justify-content: center;
     }
 
@@ -289,9 +281,31 @@ body {
     .textos {
         display:inline;
     }
+
+    .textos img {
+        height: 250px;
+    }
+
+    .textos  h1{
+        width: 400px;
+    }
+
     .venta img {
         width: 300px;
         height: 300px;
+    }
+
+    .equipo img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .empleados img {
+        width: 400px;
+    }
+
+    .subtexto {
+        width: 400px;
     }
 }
 @media (max-width: 576px) {
@@ -302,8 +316,43 @@ body {
     .titulo h2 {
         font-size: 17px;
     }
+
+    .textos {
+        display:inline;
+    }
+
+    .textos img {
+        height: 250px;
+    }
+
+    .textos  h1{
+        width: 600px;
+    }
+
     .venta img {
         width: 200px;
         height: 200px;
+    }
+
+    .equipo img {
+        width: 200px;
+        height: 200px;
+    }
+
+
+}
+@media (max-width: 430px) {
+
+    .header nav li{
+        padding-inline: 63px;
+        justify-content: space-between;
+    }
+
+    .empleados img {
+        width: 300px;
+    }
+
+    .subtexto {
+        width: 300px;
     }
 }
