@@ -32,7 +32,7 @@ p {
 }
 
 body {
-    background-color: #222222;
+    background-color: #000000;
 }
 /*-----------------HEADER---------------------*/
 
@@ -75,7 +75,7 @@ body {
         gap: 2rem;
         flex-wrap: wrap;
     }
-    .header nav a{
+    .header nav a {
         border-inline: 1px solid #d5b75d;
         color: white;
         text-decoration: none;
@@ -83,15 +83,20 @@ body {
     /*-----------------NAV---------------------*/
 /*-----------------HEADER---------------------*/
 /*-----------------MAIN---------------------*/
-main {
-    background-color: #222222;
+.fondo-index {
+    background-image: url("../img/fondoparaindex.png");
+    background-position: center center;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
     /*-----------------titulo---------------------*/
     .titulo {
         color: white;
         text-align: center;
-        background-color: #00ac81;
+        background-color: #313131;
         padding-block: 15px;
     }
     .titulo h1 {
@@ -108,8 +113,8 @@ main {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-column-gap: 0px;
-        grid-row-gap: 150px;
-        margin-block: 150px;
+        grid-row-gap: 0px;
+        padding-block: 150px;
         align-items: center;
     }
 
@@ -119,6 +124,19 @@ main {
     .logo-pedal-grid { grid-area: 2 / 3 / 3 / 5; }
     .logo-amplificador-grid { grid-area: 3 / 1 / 4 / 3; }
     .ventas3 { grid-area: 3 / 3 / 4 / 5; }
+
+    .ventas {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ventas2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ventas3 {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     
     .gibson h3{
@@ -301,9 +319,7 @@ main {
         color: #d5b75d;
     }
 
-body {
-    background-color: #222222;
-}
+
 
 
 /*---------AJUSTES----------*/
@@ -349,6 +365,49 @@ body {
     .subtexto {
         width: 400px;
     }
+    /*GRILLA DE INDEX*/
+    .grilla-index {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        padding-block: 0px;
+        align-items: center;
+        
+    }
+    .logo-instrumentos-grid { grid-area: 1 / 1 / 2 / 3; }
+    .ventas { grid-area: 2 / 1 / 4 / 3; }
+    .logo-pedal-grid { grid-area: 4 / 1 / 5 / 3; }
+    .ventas2 { grid-area: 5 / 1 / 7 / 3; }
+    .logo-amplificador-grid { grid-area: 7 / 1 / 8 / 3; }
+    .ventas3 { grid-area: 8 / 1 / 10 / 3; }
+
+    /*logos*/
+    .logo-instrumentos-grid img {
+        width: 100%;
+    }
+    .logo-pedal-grid img {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .logo-amplificador-grid img {
+        width: 100%;
+    }
+    /*guitarras*/
+    .venta img{
+        width: 200px;
+        height: 200px;
+    }
+    /*pedales*/
+    .venta2 img{
+        width: 200px;
+        height: 200px;
+    }
+    /*amplificadores*/
+    .venta3 img{
+        width: 200px;
+        height: 200px;
+    }
 }
 @media (max-width: 576px) {
     
@@ -380,6 +439,7 @@ body {
         width: 200px;
         height: 200px;
     }
+    
 
 
 }
