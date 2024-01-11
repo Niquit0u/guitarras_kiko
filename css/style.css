@@ -22,7 +22,7 @@ h1 {
     font-family: 'Prompt', sans-serif;
 }
 h2 {
-    font-family: 'Space Mono', monospace;;
+    font-family: 'Space Mono', monospace;
 }
 h3 {
     font-family: 'Prompt', sans-serif;
@@ -57,8 +57,11 @@ body {
         padding-inline: 2rem;
         text-decoration: none;
     }
+    .logo:hover h2 {
+        font-size: 40px;
+    }
 
-    .logo img{
+    .logo img {
         height: 100px;
         margin-right: 10px;
     }
@@ -79,6 +82,9 @@ body {
         border-inline: 1px solid #d5b75d;
         color: white;
         text-decoration: none;
+    }
+    .header nav a:hover {
+        font-size: 19px;
     }
     /*-----------------NAV---------------------*/
 /*-----------------HEADER---------------------*/
@@ -187,7 +193,7 @@ body {
     .venta {
         padding: 2rem;
         align-items: center;
-        background-color: #151515;
+        background-color: #1515153b;
         border-radius: 5%;
     }
     .venta div {
@@ -276,9 +282,19 @@ body {
     }
     .contacto input {
         margin-inline: 9px;
+        background-color: #151515;
     }
     .contacto textarea {
         margin-inline: 9px;
+        background-color: #151515;
+    }
+    .contacto button {
+        padding-inline: 50px;
+        color: white;
+        background-color: #151515;
+    }
+    .contacto button:hover {
+        background-color: rgb(255, 4, 180);
     }
 
 /*-----------------FOOTER---------------------*/
