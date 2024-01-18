@@ -33,6 +33,7 @@ p {
 
 body {
     background-color: #000000;
+    
 }
 /*-----------------HEADER---------------------*/
 
@@ -56,20 +57,28 @@ body {
         padding-block: 1rem;
         padding-inline: 2rem;
         text-decoration: none;
+        
     }
     .logo:hover h2 {
-        font-size: 40px;
+        transform: rotate(10deg);
+        scale: 1.2;
+    }
+    .logo:hover img {
+        transform: rotate(-90deg);
+        scale: 1.2;
     }
 
     .logo img {
         height: 100px;
         margin-right: 10px;
+        transition: 1s ease-out;
     }
 
     .logo h2 {
         color: white;
         margin-top: 2.3rem;
         font-family: 'Space Mono', monospace;
+        transition: 1s ease-out;
     }
     /*-----------------LOGO---------------------*/
     /*-----------------NAV---------------------*/
@@ -82,9 +91,10 @@ body {
         border-inline: 1px solid #d5b75d;
         color: white;
         text-decoration: none;
+        transition: 1s;
     }
     .header nav a:hover {
-        font-size: 19px;
+        scale: 1.2;
     }
     /*-----------------NAV---------------------*/
 /*-----------------HEADER---------------------*/
@@ -124,12 +134,28 @@ body {
         align-items: center;
     }
 
-    .logo-instrumentos-grid { grid-area: 1 / 1 / 2 / 3; }
-    .ventas { grid-area: 1 / 3 / 2 / 5; }
-    .ventas2 { grid-area: 2 / 1 / 3 / 3; }
-    .logo-pedal-grid { grid-area: 2 / 3 / 3 / 5; }
-    .logo-amplificador-grid { grid-area: 3 / 1 / 4 / 3; }
-    .ventas3 { grid-area: 3 / 3 / 4 / 5; }
+    .logo-instrumentos-grid { 
+        grid-area: 1 / 1 / 2 / 3; 
+        transition: 1s ease-out;}
+    .ventas { 
+        grid-area: 1 / 3 / 2 / 5;}
+    .ventas2 { 
+        grid-area: 2 / 1 / 3 / 3;}
+    .logo-pedal-grid { 
+        grid-area: 2 / 3 / 3 / 5; 
+        transition: 1s ease-out;}
+    .logo-amplificador-grid { 
+        grid-area: 3 / 1 / 4 / 3; 
+        transition: 1s ease-out;}
+    .ventas3 { 
+        grid-area: 3 / 3 / 4 / 5;}
+
+    .logo-instrumentos-grid:hover {transform: rotatey(26deg) rotatex(20deg);
+        scale: 1.2;}
+    .logo-pedal-grid:hover {transform: rotatey(-26deg) rotatex(-20deg);
+        scale: 1.2;}
+    .logo-amplificador-grid:hover {transform: rotatey(26deg) rotatex(20deg);
+        scale: 1.2;}
 
 
 
@@ -292,9 +318,11 @@ body {
         padding-inline: 50px;
         color: white;
         background-color: #151515;
+        transition: 1s;
     }
     .contacto button:hover {
         background-color: rgb(255, 4, 180);
+        scale: 1.1;
     }
 
 /*-----------------FOOTER---------------------*/
