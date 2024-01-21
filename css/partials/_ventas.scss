@@ -1,0 +1,44 @@
+.venta {
+    padding: 2rem;
+    align-items: center;
+    background-color: #1515153b;
+    border-radius: 5%;
+    div {
+        max-width: 500px;
+    }
+    h3 {
+        color: #d5b75d;
+    }
+    h4 {
+        color: cadetblue;
+    }
+    img {
+        margin-inline: 20px;
+        width: 200px;
+        height: 200px;
+    }
+}
+.ventas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-block: 60px;
+    padding-top: 50px;
+    text-align: center;
+}
+.ventas2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-block: 60px;
+    padding-top: 50px;
+    text-align: center;
+}
+.ventas3 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-block: 60px;
+    padding-top: 50px;
+    text-align: center;
+}

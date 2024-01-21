@@ -1,0 +1,59 @@
+.header {
+    background-color: $color-principal;
+    .conf {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between; 
+    }
+    /*-------------LOGO--------------*/
+    .logo {
+        display: flex;
+        padding-block: 1rem;
+        padding-inline: 2rem;
+        text-decoration: none;
+        
+        &:hover {
+            h2 {
+                transform: rotate(10deg);
+                scale: 1.2;
+            }
+            img {
+                transform: rotate(-90deg);
+                scale: 1.2;
+            }
+            
+        }
+    img {
+        height: 100px;
+        margin-right: 10px;
+        transition: 1s ease-out;
+        }
+    }
+        
+    h2 {
+        color: white;
+        margin-top: 2.3rem;
+        font-family: 'Space Mono', monospace;
+        transition: 1s ease-out;
+    }
+
+    /*-------------NAV--------------*/
+
+    nav {
+        li {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        a {
+            border-inline: 1px solid #d5b75d;
+            color: white;
+            text-decoration: none;
+            transition: 1s;
+            &:hover {
+                scale: 1.2;
+            }
+        }
+    }
+}
