@@ -115,7 +115,7 @@ body {
   padding-bottom: 15px;
 }
 .titulo h1 {
-  height: 125px;
+  height: 15%;
   font-size: 130px;
   font-family: "Markazi Text", serif;
   padding-top: 0;
@@ -131,7 +131,7 @@ body {
 .venta {
   padding: 2rem;
   align-items: center;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.5607843137);
   border-radius: 5%;
 }
 .venta div {
@@ -159,6 +159,9 @@ body {
   padding-top: 50px;
   text-align: center;
 }
+.ventas .venta {
+  margin: 25px;
+}
 
 .ventas2 {
   display: flex;
@@ -168,6 +171,9 @@ body {
   padding-top: 50px;
   text-align: center;
 }
+.ventas2 .venta {
+  margin: 25px;
+}
 
 .ventas3 {
   display: flex;
@@ -176,6 +182,9 @@ body {
   padding-block: 60px;
   padding-top: 50px;
   text-align: center;
+}
+.ventas3 .venta {
+  margin: 25px;
 }
 
 .grilla-index {
@@ -410,7 +419,7 @@ footer .redes a h3 {
 }
 
 @media (max-width: 990px) {
-  .conf {
+  .header .conf {
     justify-content: center;
   }
   .titulo h1 {
@@ -419,20 +428,7 @@ footer .redes a h3 {
   .titulo h2 {
     font-size: 30px;
   }
-  .textos {
-    display: inline;
-  }
-  .textos img {
-    height: 250px;
-  }
-  .textos h1 {
-    width: 400px;
-  }
   .venta img {
-    width: 300px;
-    height: 300px;
-  }
-  .equipo img {
     width: 300px;
     height: 300px;
   }
@@ -454,44 +450,46 @@ footer .redes a h3 {
   .grilla-index .logo-instrumentos-grid {
     grid-area: 1/1/2/3;
   }
+  .grilla-index .logo-instrumentos-grid img {
+    width: 100%;
+  }
   .grilla-index .ventas {
     grid-area: 2/1/4/3;
+  }
+  .grilla-index .ventas img {
+    width: 200px;
+    height: 200px;
   }
   .grilla-index .logo-pedal-grid {
     grid-area: 4/1/5/3;
   }
+  .grilla-index .logo-pedal-grid img {
+    width: 100%;
+    margin-left: 0px;
+  }
   .grilla-index .ventas2 {
     grid-area: 5/1/7/3;
+  }
+  .grilla-index .ventas2 img {
+    width: 200px;
+    height: 200px;
   }
   .grilla-index .logo-amplificador-grid {
     grid-area: 7/1/8/3;
   }
+  .grilla-index .logo-amplificador-grid img {
+    width: 100%;
+  }
+  .grilla-index .logo-amplificador-grid {
+    grid-area: 7/1/8/3;
+  }
+  .grilla-index .logo-amplificador-grid img {
+    width: 100%;
+  }
   .grilla-index .ventas3 {
     grid-area: 8/1/10/3;
   }
-  /*logos*/
-  .logo-instrumentos-grid img {
-    width: 100%;
-  }
-  .logo-pedal-grid img {
-    width: 100%;
-    margin-left: 0px;
-  }
-  .logo-amplificador-grid img {
-    width: 100%;
-  }
-  /*guitarras*/
-  .venta img {
-    width: 200px;
-    height: 200px;
-  }
-  /*pedales*/
-  .venta2 img {
-    width: 200px;
-    height: 200px;
-  }
-  /*amplificadores*/
-  .venta3 img {
+  .grilla-index .ventas3 img {
     width: 200px;
     height: 200px;
   }
@@ -507,22 +505,9 @@ footer .redes a h3 {
   .titulo h2 {
     font-size: 17px;
   }
-  .textos {
-    display: inline;
-  }
-  .textos img {
-    height: 250px;
-  }
-  .textos h1 {
-    width: 600px;
-  }
   .venta img {
     width: 100px;
     height: 100px;
-  }
-  .equipo img {
-    width: 200px;
-    height: 200px;
   }
 }
 @media (max-width: 430px) {

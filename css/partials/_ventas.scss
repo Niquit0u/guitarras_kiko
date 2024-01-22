@@ -1,7 +1,7 @@
 .venta {
     padding: 2rem;
     align-items: center;
-    background-color: $color-principal;
+    background-color: $color-principal-transparente;
     border-radius: 5%;
     
     div {
@@ -28,6 +28,9 @@
     padding-block: 60px;
     padding-top: 50px;
     text-align: center;
+    .venta {
+        margin: 25px;
+    }
 }
 .ventas2 {
     display: flex;
@@ -36,6 +39,9 @@
     padding-block: 60px;
     padding-top: 50px;
     text-align: center;
+    .venta {
+        margin: 25px;
+    }
 }
 .ventas3 {
     display: flex;
@@ -44,4 +50,7 @@
     padding-block: 60px;
     padding-top: 50px;
     text-align: center;
+    .venta {
+        margin: 25px;
+    }
 }
