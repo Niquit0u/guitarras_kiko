@@ -1,0 +1,24 @@
+.nosotros {
+    display: flex;
+    justify-content: center;
+    color: white;
+    .empleados {
+        padding-block: 28.5px;
+        img {
+            width: 800px;
+        }
+        h3 {
+            padding-bottom: 5px;
+            color: #d5b75d;
+        }
+    }
+    .subtexto {
+        padding-bottom: 20px;
+        width: 800px;
+        color: white;
+        h3 {
+            padding-bottom: 5px;
+            color: #d5b75d;
+        }
+    }
+}

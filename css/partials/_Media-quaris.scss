@@ -1,0 +1,183 @@
+@media (max-width: 990px) {
+
+    .conf {
+        justify-content: center;
+    }
+
+    .titulo {
+        h1 {
+            font-size: 50px;
+        }
+    }
+    .titulo {
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    .textos {
+        display:inline;
+    }
+
+    .textos {
+        img {
+            height: 250px;
+        }
+    }
+
+    .textos {
+        h1{
+            width: 400px;
+        }
+    }
+
+    .venta {
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    .equipo {
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    .empleados {
+        img {
+            width: 400px;
+        }
+    }
+
+    .subtexto {
+        width: 400px;
+    }
+    /*GRILLA DE INDEX*/
+    .grilla-index {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        padding-block: 0px;
+        align-items: center;
+    
+        .logo-instrumentos-grid { grid-area: 1 / 1 / 2 / 3; }
+        .ventas { grid-area: 2 / 1 / 4 / 3; }
+        .logo-pedal-grid { grid-area: 4 / 1 / 5 / 3; }
+        .ventas2 { grid-area: 5 / 1 / 7 / 3; }
+        .logo-amplificador-grid { grid-area: 7 / 1 / 8 / 3; }
+        .ventas3 { grid-area: 8 / 1 / 10 / 3; }
+    }
+
+    /*logos*/
+    .logo-instrumentos-grid {
+        img {
+            width: 100%;
+        }
+    }
+    .logo-pedal-grid {
+        img {
+            width: 100%;
+            margin-left: 0px;
+        }
+    }
+    .logo-amplificador-grid {
+        img {
+            width: 100%;
+        }
+    }
+    /*guitarras*/
+    .venta {
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    }
+    /*pedales*/
+    .venta2 {
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    }
+    /*amplificadores*/
+    .venta3 {
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    }
+    .grilla-venta {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 576px) {
+    
+    .titulo {
+        h1 {
+            font-size: 35px;
+        }
+    }
+    .titulo {
+        h2 {
+            font-size: 17px;
+        }
+    }
+
+    .textos {
+        display:inline;
+    }
+
+    .textos {
+        img {
+            height: 250px;
+        }
+    }
+
+    .textos {
+        h1{
+            width: 600px;
+        }
+    }
+
+    .venta {
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    .equipo {
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+    
+
+
+}
+@media (max-width: 430px) {
+
+    .header {
+        nav {
+            li{
+                padding-inline: 63px;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .empleados {
+        img {
+            width: 300px;
+        }
+    }
+
+    .subtexto {
+        width: 300px;
+    }
+}

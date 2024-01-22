@@ -234,6 +234,52 @@ body {
   grid-area: 3/3/4/5;
 }
 
+/*--------GRILLA-DE-VENTAS---------------*/
+.grilla-venta {
+  padding-inline: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+.grilla-venta .venta1 {
+  grid-area: 1/1/2/2;
+}
+.grilla-venta .venta2 {
+  grid-area: 1/2/2/3;
+}
+.grilla-venta .venta3 {
+  grid-area: 1/3/2/4;
+}
+.grilla-venta .venta4 {
+  grid-area: 2/1/3/2;
+}
+.grilla-venta .venta5 {
+  grid-area: 2/2/3/3;
+}
+.grilla-venta .venta6 {
+  grid-area: 2/3/3/4;
+}
+.grilla-venta .venta7 {
+  grid-area: 3/1/4/2;
+}
+.grilla-venta .venta8 {
+  grid-area: 3/2/4/3;
+}
+.grilla-venta .venta9 {
+  grid-area: 3/3/4/4;
+}
+.grilla-venta .venta10 {
+  grid-area: 4/1/5/2;
+}
+.grilla-venta .venta11 {
+  grid-area: 4/2/5/3;
+}
+.grilla-venta .venta12 {
+  grid-area: 4/3/5/4;
+}
+
 footer .redes {
   background-color: #000000;
   display: flex;
@@ -259,4 +305,235 @@ footer .redes a img {
 footer .redes a h3 {
   color: #d5b75d;
   font-family: "Aladin", system-ui;
+}
+
+.nosotros {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.nosotros .empleados {
+  padding-block: 28.5px;
+}
+.nosotros .empleados img {
+  width: 800px;
+}
+.nosotros .empleados h3 {
+  padding-bottom: 5px;
+  color: #d5b75d;
+}
+.nosotros .subtexto {
+  padding-bottom: 20px;
+  width: 800px;
+  color: white;
+}
+.nosotros .subtexto h3 {
+  padding-bottom: 5px;
+  color: #d5b75d;
+}
+
+.contactotitulo {
+  display: flex;
+  justify-content: center;
+  padding-inline: 40px;
+  padding-block: 50px;
+  font-size: 40px;
+  color: #d5b75d;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 76px;
+  color: #d5b75d;
+}
+.contacto li {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 33.4px;
+}
+.contacto h3 {
+  font-size: 40px;
+}
+.contacto input {
+  margin-inline: 9px;
+  background-color: #151515;
+}
+.contacto textarea {
+  margin-inline: 9px;
+  background-color: #151515;
+}
+.contacto .button-name {
+  align-items: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px, rgba(45, 35, 66, 0.15) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+.contacto .button-name:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+.contacto .button-name:hover {
+  box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px, rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+.contacto .button-name:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+@media (max-width: 990px) {
+  .conf {
+    justify-content: center;
+  }
+  .titulo h1 {
+    font-size: 50px;
+  }
+  .titulo h2 {
+    font-size: 30px;
+  }
+  .textos {
+    display: inline;
+  }
+  .textos img {
+    height: 250px;
+  }
+  .textos h1 {
+    width: 400px;
+  }
+  .venta img {
+    width: 300px;
+    height: 300px;
+  }
+  .equipo img {
+    width: 300px;
+    height: 300px;
+  }
+  .empleados img {
+    width: 400px;
+  }
+  .subtexto {
+    width: 400px;
+  }
+  /*GRILLA DE INDEX*/
+  .grilla-index {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding-block: 0px;
+    align-items: center;
+  }
+  .grilla-index .logo-instrumentos-grid {
+    grid-area: 1/1/2/3;
+  }
+  .grilla-index .ventas {
+    grid-area: 2/1/4/3;
+  }
+  .grilla-index .logo-pedal-grid {
+    grid-area: 4/1/5/3;
+  }
+  .grilla-index .ventas2 {
+    grid-area: 5/1/7/3;
+  }
+  .grilla-index .logo-amplificador-grid {
+    grid-area: 7/1/8/3;
+  }
+  .grilla-index .ventas3 {
+    grid-area: 8/1/10/3;
+  }
+  /*logos*/
+  .logo-instrumentos-grid img {
+    width: 100%;
+  }
+  .logo-pedal-grid img {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .logo-amplificador-grid img {
+    width: 100%;
+  }
+  /*guitarras*/
+  .venta img {
+    width: 200px;
+    height: 200px;
+  }
+  /*pedales*/
+  .venta2 img {
+    width: 200px;
+    height: 200px;
+  }
+  /*amplificadores*/
+  .venta3 img {
+    width: 200px;
+    height: 200px;
+  }
+  .grilla-venta {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 576px) {
+  .titulo h1 {
+    font-size: 35px;
+  }
+  .titulo h2 {
+    font-size: 17px;
+  }
+  .textos {
+    display: inline;
+  }
+  .textos img {
+    height: 250px;
+  }
+  .textos h1 {
+    width: 600px;
+  }
+  .venta img {
+    width: 100px;
+    height: 100px;
+  }
+  .equipo img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 430px) {
+  .header nav li {
+    padding-inline: 63px;
+    justify-content: space-between;
+  }
+  .empleados img {
+    width: 300px;
+  }
+  .subtexto {
+    width: 300px;
+  }
 }/*# sourceMappingURL=estilo.css.map */
