@@ -67,7 +67,7 @@ body {
   scale: 1.2;
 }
 .header .logo:hover img {
-  transform: rotate(-90deg);
+  transform: rotate(-80deg);
   scale: 1.2;
 }
 .header .logo img {
