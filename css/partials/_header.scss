@@ -34,7 +34,8 @@
     h2 {
         color: white;
         margin-top: 2.3rem;
-        font-family: 'Space Mono', monospace;
+        font-family: 'Aladin', system-ui;
+        font-size: 43px;
         transition: 1s ease-out;
     }
 
@@ -47,7 +48,6 @@
             flex-wrap: wrap;
         }
         a {
-            border-inline: 1px solid #d5b75d;
             color: white;
             text-decoration: none;
             transition: 1s;

@@ -1,16 +1,19 @@
 .venta {
     padding: 2rem;
     align-items: center;
-    background-color: #1515153b;
+    background-color: $color-principal;
     border-radius: 5%;
+    
     div {
         max-width: 500px;
     }
     h3 {
-        color: #d5b75d;
+        color: $color-letras-dor;
+        font-family: 'Aladin', system-ui;
     }
     h4 {
         color: cadetblue;
+        font-family: 'Aladin', system-ui;
     }
     img {
         margin-inline: 20px;

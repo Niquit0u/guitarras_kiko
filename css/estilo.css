@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rowdies&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aladin&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -75,7 +78,8 @@ body {
 .header h2 {
   color: white;
   margin-top: 2.3rem;
-  font-family: "Space Mono", monospace;
+  font-family: "Aladin", system-ui;
+  font-size: 43px;
   transition: 1s ease-out;
 }
 .header nav li {
@@ -84,7 +88,6 @@ body {
   flex-wrap: wrap;
 }
 .header nav a {
-  border-inline: 1px solid #d5b75d;
   color: white;
   text-decoration: none;
   transition: 1s;
@@ -93,6 +96,9 @@ body {
   scale: 1.2;
 }
 
+/*font-family: 'Rowdies', sans-serif;*/
+/*font-family: 'Markazi Text', serif;*/
+/*font-family: 'Aladin', system-ui;*/
 .fondo-img {
   background-image: url("../img/fondoparaindex.png");
   background-position: center center;
@@ -106,19 +112,26 @@ body {
   color: white;
   text-align: center;
   background-color: #000000;
-  padding-block: 15px;
+  padding-bottom: 15px;
 }
 .titulo h1 {
-  font-size: 100px;
+  height: 125px;
+  font-size: 130px;
+  font-family: "Markazi Text", serif;
+  padding-top: 0;
+  margin: 0;
 }
 .titulo h2 {
   font-size: 40px;
+  font-family: "Markazi Text", serif;
+  padding: 0;
+  margin: 0;
 }
 
 .venta {
   padding: 2rem;
   align-items: center;
-  background-color: rgba(21, 21, 21, 0.231372549);
+  background-color: #000000;
   border-radius: 5%;
 }
 .venta div {
@@ -126,9 +139,11 @@ body {
 }
 .venta h3 {
   color: #d5b75d;
+  font-family: "Aladin", system-ui;
 }
 .venta h4 {
   color: cadetblue;
+  font-family: "Aladin", system-ui;
 }
 .venta img {
   margin-inline: 20px;
@@ -243,4 +258,5 @@ footer .redes a img {
 }
 footer .redes a h3 {
   color: #d5b75d;
+  font-family: "Aladin", system-ui;
 }/*# sourceMappingURL=estilo.css.map */
