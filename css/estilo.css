@@ -159,9 +159,6 @@ body {
   padding-top: 50px;
   text-align: center;
 }
-.ventas .venta {
-  margin: 25px;
-}
 
 .ventas2 {
   display: flex;
@@ -171,9 +168,6 @@ body {
   padding-top: 50px;
   text-align: center;
 }
-.ventas2 .venta {
-  margin: 25px;
-}
 
 .ventas3 {
   display: flex;
@@ -182,9 +176,6 @@ body {
   padding-block: 60px;
   padding-top: 50px;
   text-align: center;
-}
-.ventas3 .venta {
-  margin: 25px;
 }
 
 .grilla-index {
@@ -427,6 +418,9 @@ footer .redes a h3 {
   }
   .titulo h2 {
     font-size: 30px;
+  }
+  .venta {
+    margin: 55px;
   }
   .venta img {
     width: 300px;
