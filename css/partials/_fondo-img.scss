@@ -1,5 +1,23 @@
 .fondo-img {
-    background-image: url("../img/fondoparaindex.png");
+    background-image: url("../../img/fondoparaindex.jpg");
+    background-position: center center;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.fondo-instrumentos {
+    background-image: url("../../img/fondo-intrumentos.jpg");
+    background-position: center center;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.fondo-equipos {
+    background-image: url("../../img/fondo-equipos.jpg");
     background-position: center center;
     height: 100%;
     background-repeat: no-repeat;

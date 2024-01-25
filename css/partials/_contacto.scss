@@ -4,14 +4,14 @@
     padding-inline: 40px;
     padding-block: 50px;
     font-size: 40px;
-    color: #d5b75d;
+    color: $color-letras-dor;
 }
 .contacto {
     display: flex;
     justify-content: center;
     padding-top: 50px;
     padding-bottom: 76px;
-    color: #d5b75d;
+    color: $color-letras-dor;
     li {
         display: flex;
         justify-content: center;
@@ -22,11 +22,11 @@
     }
     input {
         margin-inline: 9px;
-        background-color: #151515;
+        background-color: $color-secundario;
     }
     textarea {
         margin-inline: 9px;
-        background-color: #151515;
+        background-color: $color-secundario;
     }
     
     .button-name {
