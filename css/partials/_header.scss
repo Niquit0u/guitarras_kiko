@@ -14,7 +14,7 @@
         text-decoration: none;
         
         &:hover {
-            h2 {
+            h1 {
                 transform: rotate(10deg);
                 scale: 1.2;
             }
@@ -24,19 +24,20 @@
             }
             
         }
-    img {
-        height: 100px;
-        margin-right: 10px;
-        transition: 1s ease-out;
+        img {
+            height: 100px;
+            margin-right: 10px;
+            transition: 1s ease-out;
+            
         }
-    }
-        
-    h2 {
-        color: white;
-        margin-top: 2.3rem;
-        font-family: 'Aladin', system-ui;
-        font-size: 43px;
-        transition: 1s ease-out;
+            
+        h1 {
+            color: white;
+            margin-top: 2.3rem;
+            font-family: 'Aladin', system-ui;
+            font-size: 43px;
+            transition: 1s ease-out;
+        }
     }
 
     /*-------------NAV--------------*/

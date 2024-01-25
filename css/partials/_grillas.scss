@@ -6,6 +6,7 @@
     grid-row-gap: 0px;
     padding-block: 150px;
     align-items: center;
+    flex-wrap: wrap;
     .logo-instrumentos-grid {
         grid-area: 1 / 1 / 2 / 3;
         transition: 1s ease-out;
