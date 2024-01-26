@@ -100,7 +100,7 @@ body {
 /*font-family: 'Markazi Text', serif;*/
 /*font-family: 'Aladin', system-ui;*/
 .fondo-img {
-  background-image: url("../../img/fondoparaindex.jpg");
+  background-image: url("../img/fondoparaindex.jpg");
   background-position: center center;
   height: 100%;
   background-repeat: no-repeat;
@@ -109,7 +109,7 @@ body {
 }
 
 .fondo-instrumentos {
-  background-image: url("../../img/fondo-intrumentos.jpg");
+  background-image: url("../img/fondo-intrumentos.jpg");
   background-position: center center;
   height: 100%;
   background-repeat: no-repeat;
@@ -118,7 +118,7 @@ body {
 }
 
 .fondo-equipos {
-  background-image: url("../../img/fondo-equipos.jpg");
+  background-image: url("../img/fondo-equipos.jpg");
   background-position: center center;
   height: 100%;
   background-repeat: no-repeat;
