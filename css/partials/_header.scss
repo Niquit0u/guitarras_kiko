@@ -55,12 +55,13 @@
 
         .menu {
             a {
-            color: white;
+            color: $color-blanco;
             text-transform: uppercase;
             text-decoration: none;
             padding: 0 10px;
+            transition: 0.8s;
             &:hover {
-                color: $color-blanco;
+                color: $color-letras-dor;
             }
             }
             .esconder-menu {

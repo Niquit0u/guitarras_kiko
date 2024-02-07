@@ -93,13 +93,14 @@ body {
   color: #d5b75d;
 }
 .header .conf .menu a {
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
   padding: 0 10px;
+  transition: 0.8s;
 }
 .header .conf .menu a:hover {
-  color: #ffffff;
+  color: #d5b75d;
 }
 .header .conf .menu .esconder-menu {
   font-size: 30px;
