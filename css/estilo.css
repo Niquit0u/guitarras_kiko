@@ -47,53 +47,69 @@ body {
 
 .header {
   background-color: #000000;
-  /*-------------LOGO--------------*/
-  /*-------------NAV--------------*/
 }
 .header .conf {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  /*-------------LOGO--------------*/
 }
-.header .logo {
+.header .conf .logo {
   display: flex;
   padding-block: 1rem;
   padding-inline: 2rem;
   text-decoration: none;
 }
-.header .logo:hover h1 {
+.header .conf .logo:hover h1 {
   transform: rotate(10deg);
   scale: 1.2;
 }
-.header .logo:hover img {
+.header .conf .logo:hover img {
   transform: rotate(-80deg);
   scale: 1.2;
 }
-.header .logo img {
+.header .conf .logo img {
   height: 100px;
   margin-right: 10px;
   transition: 1s ease-out;
 }
-.header .logo h1 {
+.header .conf .logo h1 {
   color: white;
   margin-top: 2.3rem;
   font-family: "Aladin", system-ui;
   font-size: 43px;
   transition: 1s ease-out;
 }
-.header nav li {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
+.header .conf .mostrar-menu {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  transition: 0.4s;
+  order: 1;
 }
-.header nav a {
+.header .conf .mostrar-menu:hover {
   color: white;
-  text-decoration: none;
-  transition: 1s;
 }
-.header nav a:hover {
-  scale: 1.2;
+.header .conf .menu a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+}
+.header .conf .menu a:hover {
+  color: white;
+}
+.header .conf .menu .esconder-menu {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  transition: 0.4s;
+}
+.header .conf .menu .esconder-menu:hover {
+  color: white;
+}
+.header .conf #check {
+  display: none;
 }
 
 /*font-family: 'Rowdies', sans-serif;*/
@@ -429,8 +445,33 @@ footer .redes a h3 {
 }
 
 @media (max-width: 1400px) {
-  .header .conf {
-    justify-content: center;
+  .header .conf .mostrar-menu {
+    display: block;
+  }
+  .header .conf .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 0.8s;
+  }
+  .header .conf .menu .esconder-menu {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  .header .conf .menu a {
+    display: block;
+    padding: 20px;
+  }
+  .header .conf #check:checked ~ .menu {
+    right: 0;
   }
   .titulo h1 {
     font-size: 50px;
@@ -511,7 +552,7 @@ footer .redes a h3 {
     flex-wrap: wrap;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 776px) {
   .titulo h1 {
     font-size: 35px;
   }
@@ -524,10 +565,6 @@ footer .redes a h3 {
   }
 }
 @media (max-width: 430px) {
-  .header nav li {
-    padding-inline: 63px;
-    justify-content: space-between;
-  }
   .empleados img {
     width: 300px;
   }

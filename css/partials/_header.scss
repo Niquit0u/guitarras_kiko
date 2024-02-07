@@ -1,60 +1,80 @@
 .header {
     background-color: $color-principal;
+    
     .conf {
         display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between; 
-    }
-    /*-------------LOGO--------------*/
-    .logo {
-        display: flex;
-        padding-block: 1rem;
-        padding-inline: 2rem;
-        text-decoration: none;
-        
-        &:hover {
-            h1 {
-                transform: rotate(10deg);
-                scale: 1.2;
+    align-items: center;
+    justify-content: space-between; 
+    
+    
+     /*-------------LOGO--------------*/
+        .logo {
+            display: flex;
+            padding-block: 1rem;
+            padding-inline: 2rem;
+            text-decoration: none;
+            
+            &:hover {
+                h1 {
+                    transform: rotate(10deg);
+                    scale: 1.2;
+                }
+                img {
+                    transform: rotate(-80deg);
+                    scale: 1.2;
+                }
+                
             }
             img {
-                transform: rotate(-80deg);
-                scale: 1.2;
+                height: 100px;
+                margin-right: 10px;
+                transition: 1s ease-out;
+                
             }
-            
+                
+            h1 {
+                color: $color-blanco;
+                margin-top: 2.3rem;
+                font-family: 'Aladin', system-ui;
+                font-size: 43px;
+                transition: 1s ease-out;
+            }
         }
-        img {
-            height: 100px;
-            margin-right: 10px;
-            transition: 1s ease-out;
-            
-        }
-            
-        h1 {
-            color: white;
-            margin-top: 2.3rem;
-            font-family: 'Aladin', system-ui;
-            font-size: 43px;
-            transition: 1s ease-out;
-        }
-    }
-
-    /*-------------NAV--------------*/
-
-    nav {
-        li {
-            display: flex;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-        a {
-            color: white;
-            text-decoration: none;
-            transition: 1s;
+        .mostrar-menu {
+            font-size: 30px;
+            cursor: pointer;
+            display: none;
+            transition: 0.4s;
+            order:1;
             &:hover {
-                scale: 1.2;
+                color: white;
             }
         }
+
+        .menu {
+            a {
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 0 10px;
+            &:hover {
+                color: white;
+            }
+            }
+            .esconder-menu {
+                font-size: 30px;
+                cursor: pointer;
+                display: none;
+                transition: 0.4s;
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+        #check {
+            display: none;
+        }
     }
+
+    
 }

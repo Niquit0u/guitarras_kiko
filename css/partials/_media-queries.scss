@@ -1,11 +1,40 @@
 @media (max-width: 1400px) {
 
-
-    .header{
+    .header {
         .conf {
-            justify-content: center;
+            .mostrar-menu {
+                display: block;
+            }
+            .menu {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: black;
+                right: -100%;
+                top: 0;
+                text-align: center;
+                padding: 100px 0px;
+                z-index: 100;
+                transition: 0.8s;
+                .esconder-menu {
+                    display: block;
+                    position: absolute;
+                    top: 45px;
+                    right: 80px;
+    
+                }
+                a {
+                    display: block;
+                    padding: 20px;
+                }
+            }
+            #check:checked ~ .menu {
+                right: 0;
+            }
         }
+        
     }
+
 
     .titulo {
         h1 {
@@ -24,10 +53,8 @@
         }
     }
 
-    .empleados {
-        img {
-            width: 400px;
-        }
+    .nosotros {
+        width: 400px;
     }
 
     .subtexto {
@@ -95,10 +122,24 @@
         display: flex;
         flex-wrap: wrap;
     }
+    
 }
 
-@media (max-width: 576px) {
+@media (max-width: 776px) {
     
+    .nosotros {
+        ul {
+            .empleados {
+                img {
+                    width: 100px;
+                }
+            }
+            .subtexto {
+                width: 100px;
+            }
+        }
+        
+    }
     .titulo {
         h1 {
             font-size: 35px;
@@ -114,17 +155,11 @@
             height: 100px;
         }
     }
+    
 }
 @media (max-width: 430px) {
 
-    .header {
-        nav {
-            li{
-                padding-inline: 63px;
-                justify-content: space-between;
-            }
-        }
-    }
+    
 
     .empleados {
         img {
