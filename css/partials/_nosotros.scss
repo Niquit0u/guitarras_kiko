@@ -1,14 +1,12 @@
 .nosotros {
     display: flex;
     justify-content: center;
-    color: white;
     .empleados {
         padding-block: 28.5px;
         img {
             width: 600px;
         }
         h3 {
-            padding-bottom: 5px;
             color: $color-letras-dor;
         }
     }

@@ -63,6 +63,7 @@ body {
 .header .conf .logo:hover h1 {
   transform: rotate(10deg);
   scale: 1.2;
+  color: #d5b75d;
 }
 .header .conf .logo:hover img {
   transform: rotate(-80deg);
@@ -74,7 +75,7 @@ body {
   transition: 1s ease-out;
 }
 .header .conf .logo h1 {
-  color: white;
+  color: #ffffff;
   margin-top: 2.3rem;
   font-family: "Aladin", system-ui;
   font-size: 43px;
@@ -86,9 +87,10 @@ body {
   display: none;
   transition: 0.4s;
   order: 1;
+  color: #ffffff;
 }
 .header .conf .mostrar-menu:hover {
-  color: white;
+  color: #d5b75d;
 }
 .header .conf .menu a {
   color: white;
@@ -97,7 +99,7 @@ body {
   padding: 0 10px;
 }
 .header .conf .menu a:hover {
-  color: white;
+  color: #ffffff;
 }
 .header .conf .menu .esconder-menu {
   font-size: 30px;
@@ -106,7 +108,7 @@ body {
   transition: 0.4s;
 }
 .header .conf .menu .esconder-menu:hover {
-  color: white;
+  color: #ffffff;
 }
 .header .conf #check {
   display: none;
@@ -342,21 +344,19 @@ footer .redes a h3 {
 .nosotros {
   display: flex;
   justify-content: center;
-  color: white;
 }
 .nosotros .empleados {
   padding-block: 28.5px;
 }
 .nosotros .empleados img {
-  width: 800px;
+  width: 600px;
 }
 .nosotros .empleados h3 {
-  padding-bottom: 5px;
   color: #d5b75d;
 }
 .nosotros .subtexto {
   padding-bottom: 20px;
-  width: 800px;
+  width: 600px;
   color: white;
 }
 .nosotros .subtexto h3 {
@@ -463,8 +463,8 @@ footer .redes a h3 {
   .header .conf .menu .esconder-menu {
     display: block;
     position: absolute;
-    top: 40px;
-    right: 40px;
+    top: 45px;
+    right: 80px;
   }
   .header .conf .menu a {
     display: block;
@@ -485,9 +485,6 @@ footer .redes a h3 {
   .venta img {
     width: 300px;
     height: 300px;
-  }
-  .empleados img {
-    width: 400px;
   }
   .subtexto {
     width: 400px;
@@ -553,6 +550,12 @@ footer .redes a h3 {
   }
 }
 @media (max-width: 776px) {
+  .nosotros ul .empleados img {
+    width: 300px;
+  }
+  .nosotros ul .subtexto {
+    width: 300px;
+  }
   .titulo h1 {
     font-size: 35px;
   }
@@ -566,9 +569,9 @@ footer .redes a h3 {
 }
 @media (max-width: 430px) {
   .empleados img {
-    width: 300px;
+    width: 200px;
   }
   .subtexto {
-    width: 300px;
+    width: 200px;
   }
 }/*# sourceMappingURL=estilo.css.map */
